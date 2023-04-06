@@ -1,0 +1,84 @@
+.extra{
+  flex: 1 1 auto;
+}
+.logo{
+  margin-left: 20px;
+  color: white;
+}
+.sidenav-wrapper{
+      position: absolute;
+      top: 60px;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: #eee;
+}
+
+.mat-sidenav-content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 44px;
+}
+
+.mat-sidenav{
+  width: 200px;
+  padding: 20px;
+  font-size: 44px;
+  
+
+ 
+}
+
+button span {
+  margin: 10px;
+}
+a{
+  color: "primary";
+}
+.icon-display {
+  transform: scale(2);
+  
+  
+}
+.example-button-container {
+  display: flex;
+  justify-content: center;
+  width: 120px;
+  right: 1000px;
+  margin-right: 400px;
+}
+.user {
+  display: flex;
+  align-items: center;
+  margin-right: 0.5px;
+  color: white;
+  
+}
+.date{
+  color: white;
+  margin-right: 15px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: 2px 2px 2px;
+  nav-right: auto;
+}
+.user-name{
+  margin-right: 10px;
+  
+
+}
+.opt{
+  
+  font-size: 20px;
+}
+
+a{
+  text-decoration: none;
+}
+
+.header{
+  background-color: rgb(1, 38, 69);
+  box-shadow: 4px 4px 4px #939393;
+}

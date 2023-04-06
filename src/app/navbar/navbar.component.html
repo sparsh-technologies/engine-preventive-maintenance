@@ -1,0 +1,48 @@
+<mat-toolbar class="header">
+  <button mat-icon-button (click)="nav.toggle()"><mat-icon [ngStyle]="{'color':'white'}">menu</mat-icon></button>
+  <span class="logo">GeMone</span>
+  <div class="extra"></div>
+  <div class="date">
+      <p>{{ today | date: 'mediumDate' }}</p>
+
+  </div>
+  <div class="user">
+      <div class="user-name">Admin</div>
+      <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+          <mat-icon class="icon-display">account_circle</mat-icon>
+      </button>
+      <mat-menu #menu="matMenu" yPosition="below">
+        
+          <button mat-menu-item>
+              <mat-icon>settings</mat-icon>
+              <span>Settings</span>
+  
+          </button>
+          <button mat-menu-item>
+              <mat-icon>logout</mat-icon>
+              <span>Logout</span>
+          </button>
+
+      </mat-menu>
+  </div>
+</mat-toolbar>
+<mat-sidenav-container class="sidenav-wrapper">
+  <mat-sidenav #nav>
+      <a [routerLink]="['Chart']" >
+          <button mat-button class="opt">
+              <mat-icon>bar_chart</mat-icon>
+              <span>Chart</span>
+          </button>
+      </a>
+      <a [routerLink]="['demo']" >
+          <button mat-button class="opt">
+              <mat-icon>phone</mat-icon>
+              <span>Phone</span>
+          </button>
+      </a>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <router-outlet></router-outlet>
+</mat-sidenav-content>
+  
+</mat-sidenav-container>

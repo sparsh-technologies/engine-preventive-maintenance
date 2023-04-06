@@ -1,0 +1,97 @@
+<div class="block" style="display: flex;">
+<mat-card  style="flex: 1 1 auto;">
+    <mat-card-content>
+    <ngx-gauge [type]="gaugeType" [value]="gaugeValue" [label]="gaugeLabel" [append]="gaugeAppendText" [thick]=15
+            [min]=6 [max]=9 [thresholds]="thresholdConfig">
+        </ngx-gauge>
+        <mat-card-footer>
+            <mat-card-title>Ph Sensor</mat-card-title>
+        </mat-card-footer>
+    </mat-card-content>
+</mat-card>
+
+<mat-card class="vibration" style="flex: 1 1 auto;">
+    <mat-card-content>
+    <ngx-gauge [type]="gaugeType1" [value]="gaugeValue1" [label]="gaugeLabel1" [append]="gaugeAppendText1" [thick]=15
+        [min]=150 [max]=7600 [thresholds]="thresholdConfig1">
+    </ngx-gauge>
+    <mat-card-footer>
+        <mat-card-title>Vibration Sensor</mat-card-title>
+    </mat-card-footer>
+</mat-card-content>
+</mat-card>
+<mat-card class="tacometer" style="flex: 1 1 auto;">
+    <mat-card-content>
+    <ngx-gauge [type]="gaugeType2" [value]="gaugeValue2" [label]="gaugeLabel2" [append]="gaugeAppendText2" [thick]=15
+        [min]=0 [max]="3000" [thresholds]="thresholdConfig2">
+    </ngx-gauge>
+    <mat-card-footer>
+        <mat-card-title>Taco-Meter Sensor</mat-card-title>
+    </mat-card-footer>
+</mat-card-content>
+</mat-card>
+
+
+<mat-card class="pressure" style="flex: 1 1 auto;">
+    <mat-card-content>
+    <ngx-gauge [type]="gaugeType3" [value]="gaugeValue3" [label]="gaugeLabel3" [append]="gaugeAppendText3" [thick]=15
+        [thresholds]="thresholdConfig3">
+    </ngx-gauge>
+    <mat-card-footer>
+        <mat-card-title>Pressure Sensor</mat-card-title>
+    </mat-card-footer>
+</mat-card-content>
+</mat-card>
+</div>
+
+<div class="block" style="display: flex;">
+
+<mat-card class="viscosity" style="flex: 1 1 auto;">
+    <mat-card-content>
+    <ngx-gauge [type]="gaugeType4" [value]="gaugeValue4" [label]="gaugeLabel4" [append]="gaugeAppendText4" [thick]=15
+        [thresholds]="thresholdConfig4" [min]=0 [max]=30>
+    </ngx-gauge>
+    <mat-card-footer>
+        <mat-card-title>Viscosity Sensor</mat-card-title>
+    </mat-card-footer>
+</mat-card-content>
+
+</mat-card>
+
+
+<mat-card class="temperature" style="flex: 1 1 auto;">
+    <mat-card-content>
+    <ngx-gauge [type]="gaugeType5" [value]="gaugeValue5" [label]="gaugeLabel5" [append]="gaugeAppendText5" [thick]=15
+        [thresholds]="thresholdConfig5" [min]=300 [max]=1000>
+    </ngx-gauge>
+    <mat-card-footer>
+        <mat-card-title>Temperature Sensor</mat-card-title>
+    </mat-card-footer>
+</mat-card-content>
+
+</mat-card>
+
+<mat-card class="flowrate" style="flex: 1 1 auto;">
+    <mat-card-content>
+    <ngx-gauge [type]="gaugeType6" [value]="gaugeValue6" [label]="gaugeLabel6" [append]="gaugeAppendText6" [thick]=15
+        [thresholds]="thresholdConfig6" [min]=80 [max]=600>
+    </ngx-gauge>
+    <mat-card-footer>
+        <mat-card-title>Flow-rate Sensor</mat-card-title>
+    </mat-card-footer>
+</mat-card-content>
+
+</mat-card>
+<mat-card class="level sensor" style="flex: 1 1 auto;">
+    <mat-card-content>
+    <ngx-gauge [type]="gaugeType7" [value]="gaugeValue7" [label]="gaugeLabel7" [append]="gaugeAppendText7" [thick]=15
+        [thresholds]="thresholdConfig7" [min]=0 [max]=100>
+    </ngx-gauge>
+    <mat-card-footer>
+        <mat-card-title>Level Sensor</mat-card-title>
+    </mat-card-footer>
+</mat-card-content>
+
+</mat-card>
+
+</div>
